@@ -3,8 +3,17 @@ body {
   font-family: "Roboto", sans-serif;
   color: #2e2f42;
 }
+:root {
+  --heading-color: #2e2f42;
+  --text-color: #434455;
+  --brand-color: #4d5ae5;
+  --press-color: #404bbf;
+}
 ul {
   list-style-type: none;
+}
+a {
+  text-decoration: none;
 }
 
 .logo-first {
@@ -14,46 +23,27 @@ ul {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #4d5ae5;
+  color: var(--brand-color);
   text-decoration: none;
   text-transform: uppercase;
 }
 .logo-second {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #2e2f42;
-  text-decoration: none;
-  text-transform: uppercase;
+  color: var(--heading-color);
 }
 .footer-logo-second {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
   color: #f4f4fd;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 .site-nav .nav-item a {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #2e2f42;
-  text-decoration: none;
+  color: var(--heading-color);
 }
 .site-nav .nav-item a:hover,
 .site-nav .nav-item a:focus {
-  color: #404bbf;
+  color: var(--brand-color);
   text-decoration: underline;
 }
 .contacts .contact a {
@@ -63,21 +53,18 @@ ul {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #434455;
-  text-decoration: none;
+  color: var(--text-color);
 }
 .contacts .contact a:hover,
 .contacts .contact a:focus {
-  color: #404bbf;
+  color: var(--brand-color);
 }
 .section-hero {
   width: 1440px;
   height: 600px;
-  background: #2e2f42;
+  background: var(--heading-color);
 }
 .hero-info {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 56px;
   line-height: 60px;
@@ -95,7 +82,7 @@ ul {
   align-items: center;
   letter-spacing: 0.04em;
   color: #ffffff;
-  background: #4d5ae5;
+  background: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
@@ -103,7 +90,7 @@ ul {
   height: 56px;
 }
 .hero-btn:hover {
-  background-color: #404bbf;
+  background-color: var(--press-color);
   color: #ffffff;
 }
 .hide-h {
@@ -111,44 +98,39 @@ ul {
   cursor: default;
 }
 .advanteges-h {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--heading-color);
 }
 .advanteges-info {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text-color);
+}
+.section-4 {
+  background-color: #f4f4fd;
 }
 .work-h {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--heading-color);
 }
 .staff-h {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--heading-color);
 }
 .staff-boxes {
   display: flex;
@@ -163,31 +145,25 @@ ul {
 }
 
 .staff-name {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--heading-color);
   text-align: center;
 }
 .staff-profession {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text-color);
   text-align: center;
 }
 .footer {
-  background: #2e2f42;
+  background: var(--heading-color);
 }
 .footer-info {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -195,22 +171,19 @@ ul {
   color: #e7e9fc;
 }
 .work-name {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--heading-color);
 }
 .work-system {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text-color);
+  text-decoration: none;
 }
 .work-company {
   background: #ffffff;
@@ -218,23 +191,14 @@ ul {
   width: 360px;
   height: 420px;
 }
-.header-work-btn {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.04em;
+.work-btn:hover {
   color: #ffffff;
-  background: #404bbf;
+  background: var(--press-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  width: 69px;
-  height: 48px;
 }
 .work-btn {
   font-family: "Roboto";
@@ -244,10 +208,9 @@ ul {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
+  color: var(--brand-color);
   background: #f4f4fd;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  cursor: pointer;
-  height: 48px;
+  padding: 12px 24px 12px 24px;
 }
